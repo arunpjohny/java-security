@@ -1,0 +1,5 @@
+//To create the private key and public key
+keytool -genkey -keystore .keystore -alias arun -storepass storepassword -keypass keypassword -keyalg "RSA" -keysize 4096
+
+//To export public key as a certificate
+keytool -export -keystore .keystore -alias arun -file public.cer
